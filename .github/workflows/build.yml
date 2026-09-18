@@ -22,4 +22,5 @@ jobs:
         uses: gradle/actions/setup-gradle@v4
 
       - name: Build with Gradle
+        working-directory: arrow_mod
         run: ./gradlew build

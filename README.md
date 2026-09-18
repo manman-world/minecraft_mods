@@ -1,25 +1,10 @@
+# Minecraft Mods
 
-Installation information
-=======
+火箭与飞机模组位于 [`arrow_mod`](arrow_mod/) 目录。
 
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions provided by [GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+- [火箭使用说明](arrow_mod/火箭使用说明.md)
+- [安装说明](arrow_mod/安装说明.md)
 
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
+构建环境：Java 25、Minecraft Java 26.2、NeoForge 26.2.0.82。
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
-
-Mapping Names:
-============
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
-
-Additional Resources: 
-==========
-Community Documentation: https://docs.neoforged.net/  
-NeoForged Discord: https://discord.neoforged.net/
+在 `arrow_mod` 目录运行 `./gradlew build`；已配置本地开发工具的 Windows 环境也可运行 `build-mod.cmd`。构建产物为 `arrow_mod/build/libs/skyplanes-1.0.0.jar`。
